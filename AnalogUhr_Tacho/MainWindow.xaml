@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AnalogUhr_Tacho"
         mc:Ignorable="d"
-        Title="MainWindow"
+        Title="Tacho und Analoge Uhr"
         Height="450" Width="800" MinHeight="150" MinWidth="150"
         Loaded="Window_Loaded">
     <Grid>
