@@ -163,7 +163,7 @@ namespace AnalogUhr_Tacho
             var currentTime = DateTime.Now;
             int secondAngle = currentTime.Second * 6;
             int minuteAngle = currentTime.Minute * 6;
-            int hourAngle = currentTime.Hour * 30;
+            int hourAngle = (currentTime.Hour * 30) + (currentTime.Minute / 2); // Hour hand should smoothly increase with minutes
 
             secondHand.RenderTransform = new RotateTransform(secondAngle, secondHand.X1, secondHand.Y1);
             minuteHand.RenderTransform = new RotateTransform(minuteAngle, minuteHand.X1, minuteHand.Y1);
